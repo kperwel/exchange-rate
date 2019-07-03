@@ -1,15 +1,19 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-import useExchangeRates from "./hooks/useExchangeRates";
+import { EXCHANGE_URL } from "./settings";
+import { ExchangeResponse } from "./types";
+
+import usePull from "./hooks/usePull";
 
 const App: React.FC = () => {
-  const rates = useExchangeRates();
-  return (
-    <div className="App">
-      {JSON.stringify(rates)}
-    </div>
-  );
-}
+  const rates = usePull<ExchangeResponse>(EXCHANGE_URL);
+
+  if (!rates) {
+    return <>Loading...</>;
+  }
+
+  return <div className="exchange-rates" />;
+};
 
 export default App;
