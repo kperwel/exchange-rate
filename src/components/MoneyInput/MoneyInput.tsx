@@ -1,20 +1,35 @@
 import React, { ChangeEvent } from "react";
 import styled from "styled-components";
-
 const WrapperStyled = styled.div`
   display: flex;
-  background: #fff;
-  border: 1px dotted #666;
 `;
 
 const InputStyled = styled.input`
-  color: #000;
-  font-size: 5em;
+  color: #8ec5fc;
+  font-size: 2em;
   font-weight: bold;
   background: none;
   border: 0;
   outline: 0;
 `;
+
+const sanitizeInput = (input: string = "") => {
+  return input.replace(/\,/, ".").replace(/[^\d\,\.]/g, '');
+}
+
+const passValidation = (input: string = "") => {
+  const splitted = input.split(".") || [];
+  console.log(splitted);
+  if (splitted.length > 2) {
+    return false;
+  }
+
+  if (splitted[1] && splitted[1].length > 2) {
+    return false;
+  }
+
+  return true;
+}
 
 interface MoneyInputProps {
   onValueChange: (value: string) => void;
@@ -22,7 +37,12 @@ interface MoneyInputProps {
 }
 
 const MoneyInput = ({ value, onValueChange }: MoneyInputProps) => {
-  const onChange = (ev: ChangeEvent<HTMLInputElement>) => onValueChange(ev.target.value);
+  const onChange = (ev: ChangeEvent<HTMLInputElement>) => {
+    const sanitizedInput = sanitizeInput(ev.target.value);
+    if (passValidation(sanitizedInput)) {
+      onValueChange(sanitizedInput);
+    }
+  }
 
   return (
     <WrapperStyled>
