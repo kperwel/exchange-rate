@@ -1,10 +1,15 @@
 import React, { ChangeEvent } from "react";
 import styled from "styled-components";
-const WrapperStyled = styled.div`
-  display: flex;
-`;
 
-const InputStyled = styled.input``;
+const InputStyled = styled.input`
+  font-size: inherit;
+  color: inherit;
+  background: #FFFFFF33;
+  border: 0;
+  max-width: 200px;
+  margin-left: 5px;
+  margin-right: 5px;
+`;
 
 const sanitizeInput = (input: string = "") => {
   return input.replace(/,/, ".").replace(/[^\d,.]/g, "");
@@ -41,11 +46,7 @@ const MoneyInput = ({ value, onValueChange }: MoneyInputProps) => {
     }
   };
 
-  return (
-    <WrapperStyled>
-      <InputStyled inputMode="numeric" type="text" value={value} onChange={onChange} />
-    </WrapperStyled>
-  );
+  return <InputStyled inputMode="numeric" type="text" value={value} onChange={onChange} />;
 };
 
 export default MoneyInput;

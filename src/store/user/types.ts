@@ -1,6 +1,7 @@
 import { CURRENCY_TYPE } from "./reducer";
 import { Transation } from "./transaction";
 
+export const SWAP_CURRENCIES = "SWAP_CURRENCIES";
 export const CURRENCY_CHANGE = "CURRENCY_CHANGE";
 export const VALUE_CHANGE = "VALUE_CHANGE";
 export const EXCHANGE = "EXCHANGE";
@@ -25,4 +26,8 @@ interface Exchange {
   payload: Transation;
 }
 
-export type UserActionTypes = CurrencyChange | ValueChange | Exchange;
+interface SwapCurrencies {
+  type: typeof SWAP_CURRENCIES;
+}
+
+export type UserActionTypes = CurrencyChange | ValueChange | Exchange | SwapCurrencies;

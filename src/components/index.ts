@@ -1,1 +1,1 @@
-export { default as CurrencySelector } from "./CurrencySelector/CurrencySelector";
+export { default as CurrencySelector } from "./CurrencySelector";

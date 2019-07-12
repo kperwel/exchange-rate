@@ -1,4 +1,4 @@
-import { UserActionTypes, CURRENCY_CHANGE, VALUE_CHANGE, EXCHANGE } from "./types";
+import { UserActionTypes, CURRENCY_CHANGE, VALUE_CHANGE, EXCHANGE, SWAP_CURRENCIES } from "./types";
 import { CURRENCY_TYPE } from "./reducer";
 
 import { Transation } from "./transaction";
@@ -17,6 +17,12 @@ export function exchange(transation: Transation): UserActionTypes {
   return {
     type: EXCHANGE,
     payload: transation
+  };
+}
+
+export function swap(): UserActionTypes {
+  return {
+    type: SWAP_CURRENCIES,
   };
 }
 

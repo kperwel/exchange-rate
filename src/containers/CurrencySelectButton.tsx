@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../components/Button/Button";
+import Button from "../components/Button";
 import { currencyChange } from "../store/user/actions";
 import { useDispatch } from "react-redux";
 import { CURRENCY_TYPE } from "../store/user/reducer";

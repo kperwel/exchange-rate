@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { valueChange } from "../store/user/actions";
 
-import MoneyInput from "../components/MoneyInput/MoneyInput";
+import MoneyInput from "../components/MoneyInput";
 import { Currency } from "../types";
 import { ExchangeRates } from "../store/rates/types";
 import { RatesState } from "../store/rates/reducer";
@@ -51,7 +51,7 @@ const CurrencyAwareMoneyInput = ({ currencyType }: CurrencyAwareMoneyInputProps)
     <MoneyInput
       onValueChange={onChange}
       value={
-        isEditing ? rawValue : exchangeToFixed2(rawValue || "0", fromRate, toRate, roundingType)
+        isEditing ? rawValue : exchangeToFixed2(rawValue || "0.00", fromRate, toRate, roundingType)
       }
     />
   );

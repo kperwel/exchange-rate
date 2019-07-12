@@ -1,3 +1,4 @@
+import Big from "big.js";
 import { createSelector } from "reselect";
 import { CombinedState } from "./types";
 import { CURRENCY_TYPE } from "./user/reducer";
@@ -14,13 +15,13 @@ export const getBalance = (state: CombinedState) => state.user.balance;
 export const getSourceBalance = createSelector(
   getBalance,
   getSourceCurrency,
-  (balance, currency) => (balance[currency] ? balance[currency].toFixed(2) : "0.00")
+  (balance, currency) => (balance[currency] ? balance[currency] : Big(0))
 );
 
 export const getTargetBalance = createSelector(
   getBalance,
   getTargetCurrency,
-  (balance, currency) => (balance[currency] ? balance[currency].toFixed(2) : "0.00")
+  (balance, currency) => (balance[currency] ? balance[currency] : Big(0))
 );
 
 export const getSourceRate = createSelector(
@@ -41,10 +42,10 @@ export const getCurrencies = createSelector(
 );
 
 export const getValueRate = createSelector(
-    getValue,
-    getExchangeRates,
-    (value, rates) => rates[value[1]]
-)
+  getValue,
+  getExchangeRates,
+  (value, rates) => rates[value[1]]
+);
 
 export const getTransaction = createSelector(
   getValue,
@@ -54,4 +55,16 @@ export const getTransaction = createSelector(
   getTargetRate,
   getTargetCurrency,
   createTransaction
+);
+
+export const getIsTransactionValid = createSelector(
+  getTransaction,
+  getSourceBalance,
+  ({ value, valueRate, sourceRate }, sourceBalance) => {
+    return sourceBalance.gte(
+      Big(value[0] || 0)
+        .div(valueRate)
+        .mul(sourceRate)
+    );
+  }
 );
