@@ -36,6 +36,7 @@ const ButtonStyled = styled.button`
           }
 
           &:hover::after {
+            transition-delay: 0.5s;
             opacity: 1;
             transform: translateX(-50%) translateY(5px);
           }
@@ -84,7 +85,7 @@ interface ButtonProps {
 }
 
 const Button = ({ onClick, children, primary, disabled, message }: ButtonProps) => (
-  <ButtonStyled type="button" data-message={message} primary={primary} disabled={disabled} onClick={onClick}>
+  <ButtonStyled data-message={message} primary={primary} disabled={disabled} onClick={onClick}>
     {children}
   </ButtonStyled>
 );

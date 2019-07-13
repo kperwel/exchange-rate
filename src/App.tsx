@@ -16,7 +16,7 @@ import { useSelector, shallowEqual } from "react-redux";
 import { CurrencyType } from "./store/user/reducer";
 import { Status } from "./store/rates/reducer";
 
-const AppStyled = styled.div`
+const AppStyled = styled.form`
   display: flex;
   font-size: 2em;
   width: 100%;
