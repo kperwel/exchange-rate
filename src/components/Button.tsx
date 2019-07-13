@@ -85,7 +85,7 @@ interface ButtonProps {
 }
 
 const Button = ({ onClick, children, primary, disabled, message }: ButtonProps) => (
-  <ButtonStyled data-message={message} primary={primary} disabled={disabled} onClick={onClick}>
+  <ButtonStyled data-message={message} type={primary ? "submit" : "button"} primary={primary} disabled={disabled} onClick={onClick}>
     {children}
   </ButtonStyled>
 );
