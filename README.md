@@ -13,3 +13,5 @@ Simple webapp created with:
 - generated with Create React App
 
 Run `yarn` followed by `yarn start` to run development server.
+
+You can also check [version deployed on Heroku server](https://gentle-cove-53694.herokuapp.com/)
