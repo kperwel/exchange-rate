@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Rates /> should render error state 1`] = `
+Object {
+  "baseCurrency": "EUR",
+  "date": "2019-07-10",
+  "error": [Error: test error],
+  "rates": Object {
+    "EUR": 1,
+    "PLN": 4.2675,
+  },
+  "status": "ERROR",
+}
+`;
+
+exports[`<Rates /> should render finished state 1`] = `
+Object {
+  "baseCurrency": "PLN",
+  "date": "2019-07-10",
+  "error": null,
+  "rates": Object {
+    "EUR": 0.3,
+    "PLN": 1,
+  },
+  "status": "FINISHED",
+}
+`;
