@@ -6,7 +6,7 @@ const InputStyled = styled.input`
   color: inherit;
   background: #FFFFFF33;
   border: 0;
-  max-width: 200px;
+  max-width: 150px;
   margin-left: 5px;
   margin-right: 5px;
 `;

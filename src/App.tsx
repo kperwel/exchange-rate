@@ -1,7 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-import { TargetCurrencyPrice, SwapButton, ExchangeButton, CurrencyAwareMoneyInput, CurrencySelector } from "./containers";
+import {
+  TargetCurrencyPrice,
+  SwapButton,
+  ExchangeButton,
+  CurrencyAwareMoneyInput,
+  CurrencySelector
+} from "./containers";
 import { Loader } from "./components";
 
 import {
@@ -21,6 +27,7 @@ const AppStyled = styled.form`
   font-size: 2em;
   width: 100%;
   min-height: 100%;
+  padding: 5px;
 
   align-items: center;
   justify-content: center;
@@ -31,6 +38,10 @@ const AppStyled = styled.form`
 
 const BalanceStyled = styled.span`
   font-weight: bold;
+`;
+
+const InlineInputs = styled.span`
+  white-space: nowrap;
 `;
 
 const RatioDescriptionStyled = styled.span`
@@ -70,18 +81,21 @@ const App: React.FC = () => {
     <AppStyled>
       <TransactionDescriptionStyled>
         You have <BalanceStyled>{sourceBalance.toFixed(2)}</BalanceStyled> {sourceCurrency} and{" "}
-        <BalanceStyled>{targetBalance.toFixed(2)}</BalanceStyled> {targetCurrency}.
-        <br />
-        Pay <CurrencyAwareMoneyInput currencyType={CurrencyType.SOURCE} />
+        <BalanceStyled>{targetBalance.toFixed(2)}</BalanceStyled> {targetCurrency}. Pay{" "}
+        <CurrencyAwareMoneyInput currencyType={CurrencyType.SOURCE} />
         <CurrencySelector currencyType={CurrencyType.SOURCE} />
         to get
-        <CurrencyAwareMoneyInput currencyType={CurrencyType.TARGET} />
-        <CurrencySelector currencyType={CurrencyType.TARGET} />
+        <InlineInputs>
+          <InlineInputs>
+            <CurrencyAwareMoneyInput currencyType={CurrencyType.TARGET} />
+            <CurrencySelector currencyType={CurrencyType.TARGET} />
+          </InlineInputs>
+        </InlineInputs>
         <RatioDescriptionStyled>
           You will get <TargetCurrencyPrice /> {targetCurrency} for each {sourceCurrency}
         </RatioDescriptionStyled>
         <ButtonsSectionStyled>
-        <ExchangeButton /> or <SwapButton /> 
+          <ExchangeButton /> or <SwapButton />
         </ButtonsSectionStyled>
       </TransactionDescriptionStyled>
     </AppStyled>
