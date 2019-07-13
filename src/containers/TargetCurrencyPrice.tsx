@@ -1,19 +1,14 @@
 import React from "react";
 import Big from "big.js";
-import { useSelector } from "react-redux";
+import { useSelector, shallowEqual } from "react-redux";
 import {
   getTargetRate,
   getSourceRate,
 } from "../store/selectors";
 
-interface CurrencyPriceProps {
-  from: string;
-  to: string;
-}
-
 const TargetCurrencyPrice = () => {
-  const fromRate = useSelector(getSourceRate);
-  const toRate = useSelector(getTargetRate);
+  const fromRate = useSelector(getSourceRate, shallowEqual);
+  const toRate = useSelector(getTargetRate, shallowEqual);
 
   return (
     <>

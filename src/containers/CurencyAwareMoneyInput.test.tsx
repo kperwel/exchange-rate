@@ -6,6 +6,15 @@ import CurrencyAwareMoneyInput from "./CurrencyAwareMoneyInput";
 import { provideStore } from "../utils/testHelpers";
 import { CurrencyType } from "../store/user/reducer";
 
+interface getStateArguments {
+  sourceCurrency: string;
+  sourceCurrencyRate: number;
+  targetCurrencyRate: number;
+  targetCurrency: string;
+  value: string;
+  valueCurrency: string;
+}
+
 const getState = ({
   sourceCurrency = "PLN",
   sourceCurrencyRate = 1,
@@ -13,7 +22,7 @@ const getState = ({
   targetCurrency = "EUR",
   value = "1.99",
   valueCurrency = sourceCurrency
-} = {}) => ({
+}: Partial<getStateArguments> = {}) => ({
   user: {
     SOURCE: sourceCurrency,
     TARGET: targetCurrency,
@@ -23,13 +32,19 @@ const getState = ({
     rates: {
       [sourceCurrency]: sourceCurrencyRate,
       [targetCurrency]: targetCurrencyRate,
-      "EMPTY": "1",
+      EMPTY: "1"
     }
   }
 });
 describe("<CurrencySelector />", () => {
   it("Should format only currently not edited input", () => {
-    const state = getState({ sourceCurrency: "EUR", targetCurrency: "PLN", value: "1.9", sourceCurrencyRate: 1, targetCurrencyRate: 1 });
+    const state = getState({
+      sourceCurrency: "EUR",
+      targetCurrency: "PLN",
+      value: "1.9",
+      sourceCurrencyRate: 1,
+      targetCurrencyRate: 1
+    });
     const sourceInput = mount(
       provideStore(<CurrencyAwareMoneyInput currencyType={CurrencyType.SOURCE} />, state)
     );
@@ -52,7 +67,14 @@ describe("<CurrencySelector />", () => {
   });
 
   it("Should round source input up and target input down", () => {
-    const state = getState({ sourceCurrency: "EUR", targetCurrency: "PLN", value: "1.999", valueCurrency: "EMPTY", sourceCurrencyRate: 1, targetCurrencyRate: 1 });
+    const state = getState({
+      sourceCurrency: "EUR",
+      targetCurrency: "PLN",
+      value: "1.999",
+      valueCurrency: "EMPTY",
+      sourceCurrencyRate: 1,
+      targetCurrencyRate: 1
+    });
     const sourceInput = mount(
       provideStore(<CurrencyAwareMoneyInput currencyType={CurrencyType.SOURCE} />, state)
     );
@@ -61,16 +83,16 @@ describe("<CurrencySelector />", () => {
     );
 
     expect(
-        sourceInput
-          .find("input")
-          .at(0)
-          .props().value
-      ).toBe("2.00");
-      expect(
-        targetInput
-          .find("input")
-          .at(0)
-          .props().value
-      ).toBe("1.99");
+      sourceInput
+        .find("input")
+        .at(0)
+        .props().value
+    ).toBe("2.00");
+    expect(
+      targetInput
+        .find("input")
+        .at(0)
+        .props().value
+    ).toBe("1.99");
   });
 });
