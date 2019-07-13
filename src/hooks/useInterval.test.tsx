@@ -2,18 +2,9 @@ import React from "react";
 import useInterval from "./useInterval";
 import { act } from "@testing-library/react-hooks";
 import { mount } from "enzyme";
+import { HookWrapper } from "../utils/testHelpers";
 
 jest.useFakeTimers();
-
-function HookWrapper(props) {
-    act(() => {
-      if (props.hook) {
-        props.hook();
-      }
-    });
-    // @ts-ignore
-    return <div />;
-  }
 
 describe("<useFetch />", () => {
   it("Should fetch on mount", () => {

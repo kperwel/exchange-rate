@@ -2,32 +2,12 @@ import React from "react";
 import { act } from "@testing-library/react-hooks";
 import usePull from "./usePull";
 import { mount } from "enzyme";
+import { HookWrapper, fetchMock } from "../utils/testHelpers";
 
 jest.useFakeTimers();
 
-function HookWrapper(props) {
-  act(() => {
-    if (props.hook) {
-      props.hook();
-    }
-  });
-  // @ts-ignore
-  return <div />;
-}
-
 beforeEach(() => {
-  jest.spyOn(window, "fetch").mockImplementation(
-    () =>
-      new Promise(resolve =>
-        resolve(({
-          ok: true,
-          status: 200,
-          json: () => {
-            return {};
-          }
-        } as any) as Response)
-      )
-  );
+  jest.spyOn(window, "fetch").mockImplementation(fetchMock);
 });
 
 afterEach(() => {

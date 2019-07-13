@@ -24,7 +24,7 @@ const ButtonStyled = styled.button`
             position: absolute;
             display: block;
             background: #333;
-            width: 90%;
+            width: 95%;
             top: 100%;
             left: 50%;
             transform: translateX(-50%) translateY(-10px);
@@ -32,6 +32,7 @@ const ButtonStyled = styled.button`
             opacity: 0;
             padding: 4px;
             font-size: 0.7em;
+            white-space: nowrap;
           }
 
           &:hover::after {

@@ -2,19 +2,10 @@ import React from "react";
 import useFetch from "./useFetch";
 import { act } from "@testing-library/react-hooks";
 import { mount } from "enzyme";
-
-function HookWrapper(props) {
-    act(() => {
-      if (props.hook) {
-        props.hook();
-      }
-    });
-    // @ts-ignore
-    return <div />;
-  }
+import { HookWrapper, fetchMock } from "../utils/testHelpers";
 
 beforeEach(() => {
-  jest.spyOn(window, "fetch").mockImplementation(() => new Promise(resolve => resolve())); // 4
+  jest.spyOn(window, "fetch").mockImplementation(fetchMock);
 });
 
 afterEach(() => {

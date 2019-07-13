@@ -57,18 +57,23 @@ export const getTransaction = createSelector(
   createTransaction
 );
 
-export const getIsTransactionValid = createSelector(
+export const getTransactionValidationError = createSelector(
   getTransaction,
   getSourceBalance,
   ({ value, valueRate, sourceRate }, sourceBalance) => {
-    return (
-      value[0] &&
-      Big(value[0]).gt(0) &&
-      sourceBalance.gte(
+    if (!value[0]) {
+      return "Provide value";
+    } else if (Big(value[0]).eq(0)) {
+      return "Cannot exchange 0.00";
+    } else if (
+      sourceBalance.lt(
         Big(value[0])
           .div(valueRate)
           .mul(sourceRate)
       )
-    );
+    ) {
+      return "Insufficient funds";
+    }
+    return null;
   }
 );

@@ -535,19 +535,19 @@ exports[`should render initial state 1`] = `
                       <ExchangeButton>
                         <Button
                           disabled={true}
-                          message="Insufficient funds"
+                          message="Cannot exchange 0.00"
                           onClick={[Function]}
                           primary={true}
                         >
                           <styled.button
-                            data-message="Insufficient funds"
+                            data-message="Cannot exchange 0.00"
                             disabled={true}
                             onClick={[Function]}
                             primary={true}
                             type="button"
                           >
                             <StyledComponent
-                              data-message="Insufficient funds"
+                              data-message="Cannot exchange 0.00"
                               disabled={true}
                               forwardedComponent={
                                 Object {
@@ -609,8 +609,8 @@ exports[`should render initial state 1`] = `
                               type="button"
                             >
                               <button
-                                className="sc-bwzfXH bRQJAb"
-                                data-message="Insufficient funds"
+                                className="sc-bwzfXH fMwcoR"
+                                data-message="Cannot exchange 0.00"
                                 disabled={true}
                                 onClick={[Function]}
                                 type="button"
