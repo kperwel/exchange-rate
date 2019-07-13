@@ -1,11 +1,11 @@
 import Big from "big.js";
 import { createSelector } from "reselect";
 import { CombinedState } from "./types";
-import { CURRENCY_TYPE } from "./user/reducer";
+import { CurrencyType } from "./user/reducer";
 import { createTransaction } from "./user/transaction";
 
-export const getSourceCurrency = (state: CombinedState) => state.user[CURRENCY_TYPE.SOURCE];
-export const getTargetCurrency = (state: CombinedState) => state.user[CURRENCY_TYPE.TARGET];
+export const getSourceCurrency = (state: CombinedState) => state.user[CurrencyType.SOURCE];
+export const getTargetCurrency = (state: CombinedState) => state.user[CurrencyType.TARGET];
 
 export const getRatesFetchStatus = (state: CombinedState) => state.rates.status;
 export const getExchangeRates = (state: CombinedState) => state.rates.rates;
@@ -61,10 +61,14 @@ export const getIsTransactionValid = createSelector(
   getTransaction,
   getSourceBalance,
   ({ value, valueRate, sourceRate }, sourceBalance) => {
-    return sourceBalance.gte(
-      Big(value[0] || 0)
-        .div(valueRate)
-        .mul(sourceRate)
+    return (
+      value[0] &&
+      Big(value[0]).gt(0) &&
+      sourceBalance.gte(
+        Big(value[0])
+          .div(valueRate)
+          .mul(sourceRate)
+      )
     );
   }
 );

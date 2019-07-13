@@ -1,4 +1,4 @@
-import { CURRENCY_TYPE } from "./reducer";
+import { CurrencyType } from "./reducer";
 import { Transation } from "./transaction";
 
 export const SWAP_CURRENCIES = "SWAP_CURRENCIES";
@@ -10,7 +10,7 @@ interface CurrencyChange {
   type: typeof CURRENCY_CHANGE;
   payload: {
     currency: string;
-    currencyType: CURRENCY_TYPE;
+    currencyType: CurrencyType;
   }
 }
 

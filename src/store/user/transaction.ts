@@ -1,3 +1,5 @@
+import { Currency } from "../../types";
+
 export interface Transation {
   value: [string, string];
   valueRate: number;
@@ -8,7 +10,7 @@ export interface Transation {
 }
 
 export const createTransaction = (
-  value: [string, string],
+  value: [string, Currency],
   valueRate: number,
   sourceRate: number,
   sourceCurrency: string,

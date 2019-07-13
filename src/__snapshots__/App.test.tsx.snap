@@ -1,0 +1,965 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render error state 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <App>
+    Error
+  </App>
+</Provider>
+`;
+
+exports[`should render initial state 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <App>
+    <styled.div>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bZQynM",
+              "isStatic": true,
+              "lastClassName": "gPKfBo",
+              "rules": Array [
+                "
+  display: flex;
+  font-size: 2em;
+  width: 100%;
+  min-height: 100%;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #47404e;
+  line-height: 1.7em;
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bZQynM",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="sc-bZQynM gPKfBo"
+        >
+          <styled.div>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-dnqmqq",
+                    "isStatic": true,
+                    "lastClassName": "fpgwsK",
+                    "rules": Array [
+                      "
+  max-width: 1200px;
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-dnqmqq",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <div
+                className="sc-dnqmqq fpgwsK"
+              >
+                You have 
+                <styled.span>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-gzVnrw",
+                          "isStatic": true,
+                          "lastClassName": "grgfgk",
+                          "rules": Array [
+                            "
+  font-weight: bold;
+",
+                          ],
+                        },
+                        "displayName": "styled.span",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-gzVnrw",
+                        "target": "span",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <span
+                      className="sc-gzVnrw grgfgk"
+                    >
+                      1000.00
+                    </span>
+                  </StyledComponent>
+                </styled.span>
+                 
+                EUR
+                 and
+                 
+                <styled.span>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-gzVnrw",
+                          "isStatic": true,
+                          "lastClassName": "grgfgk",
+                          "rules": Array [
+                            "
+  font-weight: bold;
+",
+                          ],
+                        },
+                        "displayName": "styled.span",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-gzVnrw",
+                        "target": "span",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <span
+                      className="sc-gzVnrw grgfgk"
+                    >
+                      200.00
+                    </span>
+                  </StyledComponent>
+                </styled.span>
+                 
+                PLN
+                .
+                <br />
+                Pay 
+                <CurrencyAwareMoneyInput
+                  currencyType="SOURCE"
+                >
+                  <MoneyInput
+                    onValueChange={[Function]}
+                    value="0.00"
+                  >
+                    <styled.input
+                      inputMode="numeric"
+                      onChange={[Function]}
+                      type="text"
+                      value="0.00"
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-htpNat",
+                              "isStatic": true,
+                              "lastClassName": "giPlqj",
+                              "rules": Array [
+                                "
+  font-size: inherit;
+  color: inherit;
+  background: #FFFFFF33;
+  border: 0;
+  max-width: 200px;
+  margin-left: 5px;
+  margin-right: 5px;
+",
+                              ],
+                            },
+                            "displayName": "styled.input",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-htpNat",
+                            "target": "input",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        inputMode="numeric"
+                        onChange={[Function]}
+                        type="text"
+                        value="0.00"
+                      >
+                        <input
+                          className="sc-htpNat giPlqj"
+                          inputMode="numeric"
+                          onChange={[Function]}
+                          type="text"
+                          value="0.00"
+                        />
+                      </StyledComponent>
+                    </styled.input>
+                  </MoneyInput>
+                </CurrencyAwareMoneyInput>
+                <CurrencySelector
+                  currencyType="SOURCE"
+                >
+                  <CurrencySelector
+                    currencies={
+                      Array [
+                        "PLN",
+                        "EUR",
+                      ]
+                    }
+                    currency="EUR"
+                    onChange={[Function]}
+                  >
+                    <styled.select
+                      onChange={[Function]}
+                      value="EUR"
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bdVaJa",
+                              "isStatic": true,
+                              "lastClassName": "bwiEOO",
+                              "rules": Array [
+                                "
+  font-size: inherit;
+  color: inherit;
+  background: #FFFFFF33;
+  border: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+",
+                              ],
+                            },
+                            "displayName": "styled.select",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bdVaJa",
+                            "target": "select",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        onChange={[Function]}
+                        value="EUR"
+                      >
+                        <select
+                          className="sc-bdVaJa bwiEOO"
+                          onChange={[Function]}
+                          value="EUR"
+                        >
+                          <option
+                            key="PLN"
+                            value="PLN"
+                          >
+                            PLN
+                          </option>
+                          <option
+                            key="EUR"
+                            value="EUR"
+                          >
+                            EUR
+                          </option>
+                        </select>
+                      </StyledComponent>
+                    </styled.select>
+                  </CurrencySelector>
+                </CurrencySelector>
+                to get
+                <CurrencyAwareMoneyInput
+                  currencyType="TARGET"
+                >
+                  <MoneyInput
+                    onValueChange={[Function]}
+                    value="0.00"
+                  >
+                    <styled.input
+                      inputMode="numeric"
+                      onChange={[Function]}
+                      type="text"
+                      value="0.00"
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-htpNat",
+                              "isStatic": true,
+                              "lastClassName": "giPlqj",
+                              "rules": Array [
+                                "
+  font-size: inherit;
+  color: inherit;
+  background: #FFFFFF33;
+  border: 0;
+  max-width: 200px;
+  margin-left: 5px;
+  margin-right: 5px;
+",
+                              ],
+                            },
+                            "displayName": "styled.input",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-htpNat",
+                            "target": "input",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        inputMode="numeric"
+                        onChange={[Function]}
+                        type="text"
+                        value="0.00"
+                      >
+                        <input
+                          className="sc-htpNat giPlqj"
+                          inputMode="numeric"
+                          onChange={[Function]}
+                          type="text"
+                          value="0.00"
+                        />
+                      </StyledComponent>
+                    </styled.input>
+                  </MoneyInput>
+                </CurrencyAwareMoneyInput>
+                <CurrencySelector
+                  currencyType="TARGET"
+                >
+                  <CurrencySelector
+                    currencies={
+                      Array [
+                        "PLN",
+                        "EUR",
+                      ]
+                    }
+                    currency="PLN"
+                    onChange={[Function]}
+                  >
+                    <styled.select
+                      onChange={[Function]}
+                      value="PLN"
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bdVaJa",
+                              "isStatic": true,
+                              "lastClassName": "bwiEOO",
+                              "rules": Array [
+                                "
+  font-size: inherit;
+  color: inherit;
+  background: #FFFFFF33;
+  border: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+",
+                              ],
+                            },
+                            "displayName": "styled.select",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bdVaJa",
+                            "target": "select",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        onChange={[Function]}
+                        value="PLN"
+                      >
+                        <select
+                          className="sc-bdVaJa bwiEOO"
+                          onChange={[Function]}
+                          value="PLN"
+                        >
+                          <option
+                            key="PLN"
+                            value="PLN"
+                          >
+                            PLN
+                          </option>
+                          <option
+                            key="EUR"
+                            value="EUR"
+                          >
+                            EUR
+                          </option>
+                        </select>
+                      </StyledComponent>
+                    </styled.select>
+                  </CurrencySelector>
+                </CurrencySelector>
+                <styled.span>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-htoDjs",
+                          "isStatic": true,
+                          "lastClassName": "jNAluP",
+                          "rules": Array [
+                            "
+  font-style: italic;
+  display: block;
+  margin-top: 0.5em;
+  font-size: 0.7em;
+  line-height: 1.3em;
+",
+                          ],
+                        },
+                        "displayName": "styled.span",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-htoDjs",
+                        "target": "span",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <span
+                      className="sc-htoDjs jNAluP"
+                    >
+                      You will get 
+                      <TargetCurrencyPrice>
+                        4.2675
+                         
+                      </TargetCurrencyPrice>
+                       
+                      PLN
+                       for each 
+                      EUR
+                    </span>
+                  </StyledComponent>
+                </styled.span>
+                <styled.div>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-iwsKbI",
+                          "isStatic": true,
+                          "lastClassName": "eJYxnY",
+                          "rules": Array [
+                            "
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  line-height: 1em;
+",
+                          ],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-iwsKbI",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <div
+                      className="sc-iwsKbI eJYxnY"
+                    >
+                      <ExchangeButton>
+                        <Button
+                          disabled={true}
+                          message="Insufficient funds"
+                          onClick={[Function]}
+                          primary={true}
+                        >
+                          <styled.button
+                            data-message="Insufficient funds"
+                            disabled={true}
+                            onClick={[Function]}
+                            primary={true}
+                            type="button"
+                          >
+                            <StyledComponent
+                              data-message="Insufficient funds"
+                              disabled={true}
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-bwzfXH",
+                                    "isStatic": false,
+                                    "lastClassName": "dAIXbQ",
+                                    "rules": Array [
+                                      "
+  border-radius: 4px;
+  box-shadow: 2px 4px 10px 0px #0000004f;
+  padding: 10px 20px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.5em;
+  margin: 10px auto;
+  transition: 50ms transform linear;
+  text-transform: uppercase;
+  position: relative;
+
+  ",
+                                      [Function],
+                                      "
+
+  & > svg {
+    margin-left: 10px;
+  }
+
+  ",
+                                      [Function],
+                                      "
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+",
+                                    ],
+                                  },
+                                  "displayName": "styled.button",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-bwzfXH",
+                                  "target": "button",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              onClick={[Function]}
+                              primary={true}
+                              type="button"
+                            >
+                              <button
+                                className="sc-bwzfXH bRQJAb"
+                                data-message="Insufficient funds"
+                                disabled={true}
+                                onClick={[Function]}
+                                type="button"
+                              >
+                                Echange 
+                                <TrendingUp
+                                  color="currentColor"
+                                  size="24"
+                                >
+                                  <svg
+                                    fill="none"
+                                    height="24"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <polyline
+                                      points="23 6 13.5 15.5 8.5 10.5 1 18"
+                                    />
+                                    <polyline
+                                      points="17 6 23 6 23 12"
+                                    />
+                                  </svg>
+                                </TrendingUp>
+                              </button>
+                            </StyledComponent>
+                          </styled.button>
+                        </Button>
+                      </ExchangeButton>
+                       or 
+                      <SwapButton>
+                        <Button
+                          onClick={[Function]}
+                        >
+                          <styled.button
+                            onClick={[Function]}
+                            type="button"
+                          >
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-bwzfXH",
+                                    "isStatic": false,
+                                    "lastClassName": "dAIXbQ",
+                                    "rules": Array [
+                                      "
+  border-radius: 4px;
+  box-shadow: 2px 4px 10px 0px #0000004f;
+  padding: 10px 20px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.5em;
+  margin: 10px auto;
+  transition: 50ms transform linear;
+  text-transform: uppercase;
+  position: relative;
+
+  ",
+                                      [Function],
+                                      "
+
+  & > svg {
+    margin-left: 10px;
+  }
+
+  ",
+                                      [Function],
+                                      "
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+",
+                                    ],
+                                  },
+                                  "displayName": "styled.button",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-bwzfXH",
+                                  "target": "button",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              onClick={[Function]}
+                              type="button"
+                            >
+                              <button
+                                className="sc-bwzfXH dAIXbQ"
+                                onClick={[Function]}
+                                type="button"
+                              >
+                                Swap Currencies
+                                <RefreshCw
+                                  color="currentColor"
+                                  size="24"
+                                >
+                                  <svg
+                                    fill="none"
+                                    height="24"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <polyline
+                                      points="23 4 23 10 17 10"
+                                    />
+                                    <polyline
+                                      points="1 20 1 14 7 14"
+                                    />
+                                    <path
+                                      d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"
+                                    />
+                                  </svg>
+                                </RefreshCw>
+                              </button>
+                            </StyledComponent>
+                          </styled.button>
+                        </Button>
+                      </SwapButton>
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </App>
+</Provider>
+`;
+
+exports[`should render loading state 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <App>
+    <Loader>
+      <styled.div>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bxivhb",
+                "isStatic": true,
+                "lastClassName": "frJinh",
+                "rules": Array [
+                  "
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+",
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bxivhb",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <div
+            className="sc-bxivhb frJinh"
+          >
+            <styled.div>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-ifAKCX",
+                      "isStatic": true,
+                      "lastClassName": "jLWndV",
+                      "rules": Array [
+                        "
+  animation: ",
+                        Keyframes {
+                          "id": "sc-keyframes-iVXCSc",
+                          "inject": [Function],
+                          "name": "iVXCSc",
+                          "rules": Array [
+                            "@-webkit-keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                            "@keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                          ],
+                          "toString": [Function],
+                        },
+                        " 2s linear infinite;
+",
+                      ],
+                    },
+                    "displayName": "styled.div",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-ifAKCX",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <div
+                  className="sc-ifAKCX jLWndV"
+                >
+                  <Loader
+                    color="currentColor"
+                    size={32}
+                  >
+                    <svg
+                      fill="none"
+                      height={32}
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                      width={32}
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <line
+                        x1="12"
+                        x2="12"
+                        y1="2"
+                        y2="6"
+                      />
+                      <line
+                        x1="12"
+                        x2="12"
+                        y1="18"
+                        y2="22"
+                      />
+                      <line
+                        x1="4.93"
+                        x2="7.76"
+                        y1="4.93"
+                        y2="7.76"
+                      />
+                      <line
+                        x1="16.24"
+                        x2="19.07"
+                        y1="16.24"
+                        y2="19.07"
+                      />
+                      <line
+                        x1="2"
+                        x2="6"
+                        y1="12"
+                        y2="12"
+                      />
+                      <line
+                        x1="18"
+                        x2="22"
+                        y1="12"
+                        y2="12"
+                      />
+                      <line
+                        x1="4.93"
+                        x2="7.76"
+                        y1="19.07"
+                        y2="16.24"
+                      />
+                      <line
+                        x1="16.24"
+                        x2="19.07"
+                        y1="7.76"
+                        y2="4.93"
+                      />
+                    </svg>
+                  </Loader>
+                </div>
+              </StyledComponent>
+            </styled.div>
+            <styled.span>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-EHOje",
+                      "isStatic": true,
+                      "lastClassName": "eSNhqD",
+                      "rules": Array [
+                        "
+  margin-left: 10px;
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-EHOje",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <span
+                  className="sc-EHOje eSNhqD"
+                >
+                  Loading...
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </div>
+        </StyledComponent>
+      </styled.div>
+    </Loader>
+  </App>
+</Provider>
+`;

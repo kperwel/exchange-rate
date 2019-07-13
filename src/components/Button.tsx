@@ -75,7 +75,7 @@ const ButtonStyled = styled.button`
 `;
 
 interface ButtonProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   onClick: () => void;
   primary?: boolean;
   disabled?: boolean;
@@ -83,7 +83,7 @@ interface ButtonProps {
 }
 
 const Button = ({ onClick, children, primary, disabled, message }: ButtonProps) => (
-  <ButtonStyled data-message={message} primary={primary} disabled={disabled} onClick={onClick}>
+  <ButtonStyled type="button" data-message={message} primary={primary} disabled={disabled} onClick={onClick}>
     {children}
   </ButtonStyled>
 );

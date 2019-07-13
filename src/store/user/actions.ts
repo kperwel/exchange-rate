@@ -1,9 +1,9 @@
 import { UserActionTypes, CURRENCY_CHANGE, VALUE_CHANGE, EXCHANGE, SWAP_CURRENCIES } from "./types";
-import { CURRENCY_TYPE } from "./reducer";
+import { CurrencyType } from "./reducer";
 
 import { Transation } from "./transaction";
 
-export function currencyChange(currency: string, currencyType: CURRENCY_TYPE): UserActionTypes {
+export function currencyChange(currency: string, currencyType: CurrencyType): UserActionTypes {
   return {
     type: CURRENCY_CHANGE,
     payload: {

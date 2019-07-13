@@ -1,10 +1,8 @@
 import React from "react";
-import CurrencyAwareMoneyInput from "./containers/CurrencyAwareMoneyInput";
-import CurrencySelector from "./containers/CurrencySelector";
-import ExchangeButton from "./containers/ExchangeButton";
-import SwapButton from "./containers/SwapButton";
-import TargetCurrencyPrice from "./containers/TargetCurrencyPrice";
 import styled from "styled-components";
+
+import { TargetCurrencyPrice, SwapButton, ExchangeButton, CurrencyAwareMoneyInput, CurrencySelector } from "./containers";
+import { Loader } from "./components";
 
 import {
   getSourceCurrency,
@@ -14,9 +12,9 @@ import {
   getTargetBalance
 } from "./store/selectors";
 
-import { useSelector } from "react-redux";
-import { CURRENCY_TYPE } from "./store/user/reducer";
-import { STATUS } from "./store/rates/reducer";
+import { useSelector, shallowEqual, useStore } from "react-redux";
+import { CurrencyType } from "./store/user/reducer";
+import { Status } from "./store/rates/reducer";
 
 const AppStyled = styled.div`
   display: flex;
@@ -55,17 +53,17 @@ const ButtonsSectionStyled = styled.div`
 `;
 
 const App: React.FC = () => {
-  const status = useSelector(getRatesFetchStatus);
-  const sourceCurrency = useSelector(getSourceCurrency);
-  const targetCurrency = useSelector(getTargetCurrency);
+  const status = useSelector(getRatesFetchStatus, shallowEqual);
+  const sourceCurrency = useSelector(getSourceCurrency, shallowEqual);
+  const targetCurrency = useSelector(getTargetCurrency, shallowEqual);
 
-  const sourceBalance = useSelector(getSourceBalance);
-  const targetBalance = useSelector(getTargetBalance);
+  const sourceBalance = useSelector(getSourceBalance, shallowEqual);
+  const targetBalance = useSelector(getTargetBalance, shallowEqual);
 
-  if (status === STATUS.ERROR) {
+  if (status === Status.ERROR) {
     return <>Error</>;
-  } else if (status !== STATUS.FINISHED) {
-    return <>Loading...</>;
+  } else if (status !== Status.FINISHED) {
+    return <Loader />;
   }
 
   return (
@@ -74,11 +72,11 @@ const App: React.FC = () => {
         You have <BalanceStyled>{sourceBalance.toFixed(2)}</BalanceStyled> {sourceCurrency} and{" "}
         <BalanceStyled>{targetBalance.toFixed(2)}</BalanceStyled> {targetCurrency}.
         <br />
-        Pay <CurrencyAwareMoneyInput currencyType={CURRENCY_TYPE.SOURCE} />
-        <CurrencySelector currencyType={CURRENCY_TYPE.SOURCE} />
+        Pay <CurrencyAwareMoneyInput currencyType={CurrencyType.SOURCE} />
+        <CurrencySelector currencyType={CurrencyType.SOURCE} />
         to get
-        <CurrencyAwareMoneyInput currencyType={CURRENCY_TYPE.TARGET} />
-        <CurrencySelector currencyType={CURRENCY_TYPE.TARGET} />
+        <CurrencyAwareMoneyInput currencyType={CurrencyType.TARGET} />
+        <CurrencySelector currencyType={CurrencyType.TARGET} />
         <RatioDescriptionStyled>
           You will get <TargetCurrencyPrice /> {targetCurrency} for each {sourceCurrency}
         </RatioDescriptionStyled>

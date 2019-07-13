@@ -13,21 +13,21 @@ export enum MessageType {
   SUCCESS
 }
 
-export enum CURRENCY_TYPE {
-  SOURCE,
-  TARGET
+export enum CurrencyType {
+  SOURCE = "SOURCE",
+  TARGET = "TARGET"
 }
 
 export interface UserState {
-  [CURRENCY_TYPE.SOURCE]: Currency;
-  [CURRENCY_TYPE.TARGET]: Currency;
+  [CurrencyType.SOURCE]: Currency;
+  [CurrencyType.TARGET]: Currency;
   value: [string, Currency];
   balance: Balance;
 }
 
 const initialState: UserState = {
-  [CURRENCY_TYPE.SOURCE]: "EUR",
-  [CURRENCY_TYPE.TARGET]: "PLN",
+  [CurrencyType.SOURCE]: "EUR",
+  [CurrencyType.TARGET]: "PLN",
   value: ["0.00", "EUR"],
   balance: {
     EUR: Big("1000.00"),
@@ -50,8 +50,8 @@ export default function userReducer(state = initialState, action: UserActionType
     case SWAP_CURRENCIES:
       return {
         ...state,
-        [CURRENCY_TYPE.SOURCE]: state[CURRENCY_TYPE.TARGET],
-        [CURRENCY_TYPE.TARGET]: state[CURRENCY_TYPE.SOURCE]
+        [CurrencyType.SOURCE]: state[CurrencyType.TARGET],
+        [CurrencyType.TARGET]: state[CurrencyType.SOURCE]
       };
     case EXCHANGE:
       const {

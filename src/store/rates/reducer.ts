@@ -1,9 +1,9 @@
 import { RatesActionTypes, FETCH_FINISHED, FETCH_ERROR, ExchangeRates } from "./types";
 
-export enum STATUS {
-  INIT,
-  FINISHED,
-  ERROR
+export enum Status {
+  INIT = "INIT",
+  FINISHED = "FINISHED",
+  ERROR = "ERROR"
 }
 
 export interface RatesState {
@@ -11,7 +11,7 @@ export interface RatesState {
   date: string;
   error: Error | null;
   baseCurrency: string;
-  status: STATUS;
+  status: Status;
 }
 
 const initialState: RatesState = {
@@ -19,7 +19,7 @@ const initialState: RatesState = {
   date: "",
   baseCurrency: "",
   error: null,
-  status: STATUS.INIT
+  status: Status.INIT
 };
 
 export default function userReducer(state = initialState, action: RatesActionTypes): RatesState {
@@ -33,12 +33,12 @@ export default function userReducer(state = initialState, action: RatesActionTyp
         },
         date: action.payload.response.date,
         baseCurrency: action.payload.response.base,
-        status: STATUS.FINISHED
+        status: Status.FINISHED
       };
     case FETCH_ERROR:
       return {
         ...state,
-        status: STATUS.ERROR,
+        status: Status.ERROR,
         error: action.payload.error
       };
     default:

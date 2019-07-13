@@ -11,11 +11,11 @@ const InputStyled = styled.input`
   margin-right: 5px;
 `;
 
-const sanitizeInput = (input: string = "") => {
+export const sanitizeInput = (input: string = "") => {
   return input.replace(/,/, ".").replace(/[^\d,.]/g, "");
 };
 
-const passValidation = (input: string = "") => {
+export const passValidation = (input: string = "") => {
   const splitted = input.split(".") || [];
 
   if (splitted.length > 2) {

@@ -3,12 +3,9 @@ import Big from "big.js";
 import { useSelector, useDispatch } from "react-redux";
 
 import { valueChange } from "../store/user/actions";
-
-import MoneyInput from "../components/MoneyInput";
-import { Currency } from "../types";
-import { ExchangeRates } from "../store/rates/types";
-import { RatesState } from "../store/rates/reducer";
-import { UserState, CURRENCY_TYPE } from "../store/user/reducer";
+import { MoneyInput } from "../components";
+import { CurrencyType } from "../store/user/reducer";
+import { getExchangeRates, getValue, getSourceCurrency, getTargetCurrency } from "../store/selectors";
 
 export enum InputType {
   SOURCE,
@@ -23,7 +20,7 @@ const exchangeToFixed2 = (value: string, from: number, to: number, roundingType:
     .toFixed(2);
 
 interface CurrencyAwareMoneyInputProps {
-  currencyType: CURRENCY_TYPE;
+  currencyType: CurrencyType;
 }
 
 // Second parameter for round method is a RoundingMode
@@ -33,16 +30,15 @@ const ROUNDING_UP = 3;
 const ROUNDING_DOWN = 0;
 
 const CurrencyAwareMoneyInput = ({ currencyType }: CurrencyAwareMoneyInputProps) => {
-  const rates = useSelector<{ rates: RatesState }, ExchangeRates>(state => state.rates.rates);
-  const currency = useSelector<{ user: UserState }, Currency>(state => state.user[currencyType]);
-  const [rawValue, from] = useSelector<{ user: UserState }, [string, string]>(
-    state => state.user.value
-  );
+  const rates = useSelector(getExchangeRates);
+  const [rawValue, valueCurrency] = useSelector(getValue);
+  const currency = useSelector(currencyType === CurrencyType.SOURCE ? getSourceCurrency : getTargetCurrency);
 
   const dispatch = useDispatch();
-  const roundingType = currencyType === CURRENCY_TYPE.SOURCE ? ROUNDING_UP : ROUNDING_DOWN;
-  const isEditing = from === currency;
-  const fromRate = rates[from];
+
+  const roundingType = currencyType === CurrencyType.SOURCE ? ROUNDING_UP : ROUNDING_DOWN;
+  const isCurrentlyEditing = valueCurrency === currency;
+  const fromRate = rates[valueCurrency];
   const toRate = rates[currency];
 
   const onChange = (newValue: string) => dispatch(valueChange([newValue, currency]));
@@ -51,7 +47,7 @@ const CurrencyAwareMoneyInput = ({ currencyType }: CurrencyAwareMoneyInputProps)
     <MoneyInput
       onValueChange={onChange}
       value={
-        isEditing ? rawValue : exchangeToFixed2(rawValue || "0.00", fromRate, toRate, roundingType)
+        isCurrentlyEditing ? rawValue : exchangeToFixed2(rawValue || "0.00", fromRate, toRate, roundingType)
       }
     />
   );
