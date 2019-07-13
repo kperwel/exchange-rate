@@ -1,4 +1,3 @@
-import { EXCHANGE_URL, UPDATE_TIMEOUT } from "../settings";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import usePull from "../hooks/usePull";
@@ -14,8 +13,13 @@ export interface ExchangeRates {
   [key: string]: number;
 }
 
-const ExchangeRateFetcher: React.FC = () => {
-  const { response, error } = usePull<ExchangeResponse>(EXCHANGE_URL, UPDATE_TIMEOUT);
+interface ExchangeRateFetcherProps {
+  interval: number;
+  url: string;
+}
+
+const ExchangeRateFetcher = ({ interval, url }: ExchangeRateFetcherProps) => {
+  const { response, error } = usePull<ExchangeResponse>(url, interval);
   const dispatch = useDispatch();
 
   useEffect(() => {

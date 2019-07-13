@@ -7,6 +7,8 @@ import App from "./App";
 import ExchangeRateFetcher from "./containers/EchangeRateFetcher";
 import { user, rates } from "./store";
 
+import { EXCHANGE_URL, UPDATE_INTERVAL } from "./settings";
+
 import "./index.css";
 
 import * as serviceWorker from "./serviceWorker";
@@ -19,7 +21,7 @@ const store = createStore(combineReducers({
 ReactDOM.render(
   <Provider store={store}>
     <App />
-    <ExchangeRateFetcher />
+    <ExchangeRateFetcher interval={UPDATE_INTERVAL} url={EXCHANGE_URL} />
   </Provider>,
   document.getElementById("root")
 );
