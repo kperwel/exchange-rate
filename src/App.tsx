@@ -34,6 +34,10 @@ const AppStyled = styled.form`
   text-align: center;
   color: #47404e;
   line-height: 1.7em;
+  
+  @media (max-width: 768px) {
+  font-size: 1.5em;
+  }
 `;
 
 const BalanceStyled = styled.span`
@@ -53,7 +57,7 @@ const RatioDescriptionStyled = styled.span`
 `;
 
 const TransactionDescriptionStyled = styled.div`
-  max-width: 1200px;
+  max-width: 800px;
 `;
 
 const ButtonsSectionStyled = styled.div`
@@ -80,16 +84,22 @@ const App: React.FC = () => {
   return (
     <AppStyled>
       <TransactionDescriptionStyled>
-        You have <BalanceStyled>{sourceBalance.toFixed(2)}</BalanceStyled> {sourceCurrency} and{" "}
-        <BalanceStyled>{targetBalance.toFixed(2)}</BalanceStyled> {targetCurrency}. Pay{" "}
-        <CurrencyAwareMoneyInput currencyType={CurrencyType.SOURCE} />
-        <CurrencySelector currencyType={CurrencyType.SOURCE} />
-        to get
+        You have{" "}
         <InlineInputs>
-          <InlineInputs>
-            <CurrencyAwareMoneyInput currencyType={CurrencyType.TARGET} />
-            <CurrencySelector currencyType={CurrencyType.TARGET} />
-          </InlineInputs>
+          <BalanceStyled>{sourceBalance.toFixed(2)}</BalanceStyled> {sourceCurrency}
+        </InlineInputs>
+        {" "}and{" "}
+        <InlineInputs>
+          <BalanceStyled>{targetBalance.toFixed(2)}</BalanceStyled> {targetCurrency}.
+        </InlineInputs>
+        <br/>Pay 
+        <InlineInputs><CurrencyAwareMoneyInput currencyType={CurrencyType.SOURCE} />
+          <CurrencySelector currencyType={CurrencyType.SOURCE} />
+        </InlineInputs>
+          to get
+        <InlineInputs>
+          <CurrencyAwareMoneyInput currencyType={CurrencyType.TARGET} />
+          <CurrencySelector currencyType={CurrencyType.TARGET} />
         </InlineInputs>
         <RatioDescriptionStyled>
           You will get <TargetCurrencyPrice /> {targetCurrency} for each {sourceCurrency}
