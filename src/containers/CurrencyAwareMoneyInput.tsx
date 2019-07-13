@@ -1,6 +1,6 @@
 import React from "react";
 import Big from "big.js";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector, useDispatch, shallowEqual } from "react-redux";
 
 import { valueChange } from "../store/user/actions";
 import { MoneyInput } from "../components";
@@ -31,8 +31,8 @@ const ROUNDING_DOWN = 0;
 
 const CurrencyAwareMoneyInput = ({ currencyType }: CurrencyAwareMoneyInputProps) => {
   const rates = useSelector(getExchangeRates);
-  const [rawValue, valueCurrency] = useSelector(getValue);
-  const currency = useSelector(currencyType === CurrencyType.SOURCE ? getSourceCurrency : getTargetCurrency);
+  const [rawValue, valueCurrency] = useSelector(getValue, shallowEqual);
+  const currency = useSelector(currencyType === CurrencyType.SOURCE ? getSourceCurrency : getTargetCurrency, shallowEqual);
 
   const dispatch = useDispatch();
 

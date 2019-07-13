@@ -1,5 +1,5 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector, useDispatch, shallowEqual } from "react-redux";
 
 import { getCurrencies, getSourceCurrency, getTargetCurrency } from "../store/selectors";
 import { CurrencySelector as CurrencySelectorView } from "../components";
@@ -13,9 +13,10 @@ interface CurrencySelectorProps {
 }
 
 const CurrencySelector = ({ currencyType }: CurrencySelectorProps) => {
-  const currencies = useSelector(getCurrencies);
+  const currencies = useSelector(getCurrencies, shallowEqual);
   const currency = useSelector(
-    currencyType === CurrencyType.TARGET ? getTargetCurrency : getSourceCurrency
+    currencyType === CurrencyType.TARGET ? getTargetCurrency : getSourceCurrency,
+    shallowEqual
   );
 
   const dispatch = useDispatch();

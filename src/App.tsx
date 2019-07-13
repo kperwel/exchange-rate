@@ -12,7 +12,7 @@ import {
   getTargetBalance
 } from "./store/selectors";
 
-import { useSelector, shallowEqual, useStore } from "react-redux";
+import { useSelector, shallowEqual } from "react-redux";
 import { CurrencyType } from "./store/user/reducer";
 import { Status } from "./store/rates/reducer";
 
