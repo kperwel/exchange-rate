@@ -75,6 +75,10 @@ const App: React.FC = () => {
   const sourceBalance = useSelector(getSourceBalance, shallowEqual);
   const targetBalance = useSelector(getTargetBalance, shallowEqual);
 
+  const preventSubmit = (ev: React.FormEvent) => {
+    ev.preventDefault();
+  }
+
   if (status === Status.ERROR) {
     return <>Error</>;
   } else if (status !== Status.FINISHED) {
@@ -82,7 +86,7 @@ const App: React.FC = () => {
   }
 
   return (
-    <AppStyled>
+    <AppStyled onSubmit={preventSubmit}>
       <TransactionDescriptionStyled>
         You have{" "}
         <InlineInputs>
