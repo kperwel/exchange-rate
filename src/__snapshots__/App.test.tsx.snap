@@ -109,11 +109,15 @@ exports[`should render initial state 1`] = `
                           "componentStyle": ComponentStyle {
                             "componentId": "sc-gZMcBi",
                             "isStatic": true,
-                            "lastClassName": "bMwGes",
+                            "lastClassName": "cTGIgz",
                             "rules": Array [
                               "
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
+    @media screen and (min-width: 500px) {
+        padding: 20px;
+        margin: 20px;
+    }
 ",
                             ],
                           },
@@ -130,7 +134,7 @@ exports[`should render initial state 1`] = `
                       forwardedRef={null}
                     >
                       <div
-                        className="sc-gZMcBi bMwGes"
+                        className="sc-gZMcBi cTGIgz"
                       >
                         <styled.p>
                           <StyledComponent
@@ -513,7 +517,7 @@ exports[`should render initial state 1`] = `
                                         "componentStyle": ComponentStyle {
                                           "componentId": "sc-cSHVUG",
                                           "isStatic": true,
-                                          "lastClassName": "hNFsTe",
+                                          "lastClassName": "geFkiP",
                                           "rules": Array [
                                             "
   position: absolute;
@@ -523,6 +527,7 @@ exports[`should render initial state 1`] = `
   padding: 2px 4px;
   border: 1px solid #e6ebf5;
   background: #fff;
+  white-space: nowrap;
 ",
                                           ],
                                         },
@@ -539,7 +544,7 @@ exports[`should render initial state 1`] = `
                                     forwardedRef={null}
                                   >
                                     <div
-                                      className="sc-cSHVUG hNFsTe"
+                                      className="sc-cSHVUG geFkiP"
                                     >
                                       1 
                                       EUR

@@ -56,7 +56,7 @@ const FlagStyled = styled.img`
   margin: 5px;
 `;
 
-const TargetCurrencyContainer = styled.div`
+const TargetCurrencyPriceContainer = styled.div`
   position: absolute;
   left: 50%;
   font-size: 0.8em;
@@ -64,6 +64,7 @@ const TargetCurrencyContainer = styled.div`
   padding: 2px 4px;
   border: 1px solid #e6ebf5;
   background: #fff;
+  white-space: nowrap;
 `;
 
 const customFlagProvider = (src: string, currency: string) => (
@@ -96,9 +97,9 @@ const App: React.FC = () => {
           <CurrencySelector currencyType={CurrencyType.SOURCE} />
         </InputSection>
         <ButtonsSectionStyled>
-          <TargetCurrencyContainer>
+          <TargetCurrencyPriceContainer>
             1 {sourceCurrency} = <TargetCurrencyPrice />{targetCurrency}
-          </TargetCurrencyContainer>
+          </TargetCurrencyPriceContainer>
           <SwapButton />
         </ButtonsSectionStyled>
         <InputSection>

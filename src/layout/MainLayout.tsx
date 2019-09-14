@@ -13,8 +13,12 @@ const MainLayoutStyled = styled.div`
     align-items: center;
 `;
 const ContentStyled = styled.div`
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
+    @media screen and (min-width: 500px) {
+        padding: 20px;
+        margin: 20px;
+    }
 `;
 
 interface MainLayoutProps {
