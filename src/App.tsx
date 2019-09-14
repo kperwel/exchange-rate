@@ -87,7 +87,7 @@ const App: React.FC = () => {
   return (
     <MainLayout headerProvider={() => <Header balance={sourceBalance} currency={sourceCurrency} />}>
       <BalanceMessageStyled>
-        Your balance is <BalanceStyled>{sourceBalance.toFixed(2)}</BalanceStyled> {sourceCurrency}.
+        Your balance is <BalanceStyled>{sourceBalance.toFixed(2)}</BalanceStyled> {sourceCurrency} and <BalanceStyled>{targetBalance.toFixed(2)}</BalanceStyled> {targetCurrency} .
       </BalanceMessageStyled>
       <div>
         <InputSection>
