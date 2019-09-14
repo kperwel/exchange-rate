@@ -14,7 +14,7 @@ const ExchangeButton = () => {
   const onClick = useCallback(() => dispatch(exchange(transaction)), [transaction, dispatch]);
   return (
     <>
-      <Button primary message={error} disabled={!!error} onClick={onClick}>
+      <Button disabled={!!error} onClick={onClick}>
         Echange <TrendingUp />
       </Button>
     </>

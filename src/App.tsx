@@ -6,9 +6,12 @@ import {
   SwapButton,
   ExchangeButton,
   CurrencyAwareMoneyInput,
-  CurrencySelector
+  CurrencySelector,
+  Header
 } from "./containers";
-import { Loader } from "./components";
+import { Loader, Flag } from "./components";
+
+import { MainLayout } from "./layout";
 
 import {
   getSourceCurrency,
@@ -22,50 +25,50 @@ import { useSelector, shallowEqual } from "react-redux";
 import { CurrencyType } from "./store/user/reducer";
 import { Status } from "./store/rates/reducer";
 
-const AppStyled = styled.form`
-  display: flex;
-  font-size: 2em;
-  width: 100%;
-  min-height: 100%;
-  padding: 5px;
-
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #47404e;
-  line-height: 1.7em;
-  
-  @media (max-width: 768px) {
-  font-size: 1.5em;
-  }
-`;
-
 const BalanceStyled = styled.span`
   font-weight: bold;
+  width: 30%;
 `;
 
-const InlineInputs = styled.span`
-  white-space: nowrap;
-`;
-
-const RatioDescriptionStyled = styled.span`
-  font-style: italic;
-  display: block;
-  margin-top: 0.5em;
-  font-size: 0.7em;
-  line-height: 1.3em;
-`;
-
-const TransactionDescriptionStyled = styled.div`
-  max-width: 800px;
+const BalanceMessageStyled = styled.p`
+  color: #fff;
 `;
 
 const ButtonsSectionStyled = styled.div`
   display: flex;
+  align-content: flex-end;
   flex-direction: column;
-  margin: 10px;
+  position: relative;
   line-height: 1em;
 `;
+
+const InputSection = styled.div`
+  align-items: center;
+  background: #fff;
+  box-shadow: 0px 2px 7px 0px #002c9080;
+  padding: 10px;
+  display: flex;
+  padding-right: 40px;
+`;
+
+const FlagStyled = styled.img`
+  height: 1em;
+  margin: 5px;
+`;
+
+const TargetCurrencyContainer = styled.div`
+  position: absolute;
+  left: 50%;
+  font-size: 0.8em;
+  transform: translate(-50%, -50%);
+  padding: 2px 4px;
+  border: 1px solid #e6ebf5;
+  background: #fff;
+`;
+
+const customFlagProvider = (src: string, currency: string) => (
+  <FlagStyled src={src} title={`Flag for ${currency}`} alt={`${currency}`} />
+);
 
 const App: React.FC = () => {
   const status = useSelector(getRatesFetchStatus, shallowEqual);
@@ -75,10 +78,6 @@ const App: React.FC = () => {
   const sourceBalance = useSelector(getSourceBalance, shallowEqual);
   const targetBalance = useSelector(getTargetBalance, shallowEqual);
 
-  const preventSubmit = (ev: React.FormEvent) => {
-    ev.preventDefault();
-  }
-
   if (status === Status.ERROR) {
     return <>Error</>;
   } else if (status !== Status.FINISHED) {
@@ -86,33 +85,32 @@ const App: React.FC = () => {
   }
 
   return (
-    <AppStyled onSubmit={preventSubmit}>
-      <TransactionDescriptionStyled>
-        You have{" "}
-        <InlineInputs>
-          <BalanceStyled>{sourceBalance.toFixed(2)}</BalanceStyled> {sourceCurrency}
-        </InlineInputs>
-        {" "}and{" "}
-        <InlineInputs>
-          <BalanceStyled>{targetBalance.toFixed(2)}</BalanceStyled> {targetCurrency}.
-        </InlineInputs>
-        <br/>Pay 
-        <InlineInputs><CurrencyAwareMoneyInput currencyType={CurrencyType.SOURCE} />
+    <MainLayout headerProvider={() => <Header balance={sourceBalance} currency={sourceCurrency} />}>
+      <BalanceMessageStyled>
+        Your balance is <BalanceStyled>{sourceBalance.toFixed(2)}</BalanceStyled> {sourceCurrency}.
+      </BalanceMessageStyled>
+      <div>
+        <InputSection>
+          <Flag customRenderProvider={customFlagProvider} currency={sourceCurrency} />
+          <CurrencyAwareMoneyInput currencyType={CurrencyType.SOURCE} />
           <CurrencySelector currencyType={CurrencyType.SOURCE} />
-        </InlineInputs>
-          to get
-        <InlineInputs>
+        </InputSection>
+        <ButtonsSectionStyled>
+          <TargetCurrencyContainer>
+            1 {sourceCurrency} = <TargetCurrencyPrice />{targetCurrency}
+          </TargetCurrencyContainer>
+          <SwapButton />
+        </ButtonsSectionStyled>
+        <InputSection>
+          <Flag customRenderProvider={customFlagProvider} currency={targetCurrency} />
           <CurrencyAwareMoneyInput currencyType={CurrencyType.TARGET} />
           <CurrencySelector currencyType={CurrencyType.TARGET} />
-        </InlineInputs>
-        <RatioDescriptionStyled>
-          You will get <TargetCurrencyPrice /> {targetCurrency} for each {sourceCurrency}
-        </RatioDescriptionStyled>
+        </InputSection>
         <ButtonsSectionStyled>
-          <ExchangeButton /> or <SwapButton />
+          <ExchangeButton />
         </ButtonsSectionStyled>
-      </TransactionDescriptionStyled>
-    </AppStyled>
+      </div>
+    </MainLayout>
   );
 };
 
