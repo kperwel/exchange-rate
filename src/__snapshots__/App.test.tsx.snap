@@ -31,704 +31,866 @@ exports[`should render initial state 1`] = `
   }
 >
   <App>
-    <styled.form
-      onSubmit={[Function]}
+    <MainLayout
+      headerProvider={[Function]}
     >
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-bZQynM",
-              "isStatic": true,
-              "lastClassName": "dQvTFt",
-              "rules": Array [
-                "
-  display: flex;
-  font-size: 2em;
-  width: 100%;
-  min-height: 100%;
-  padding: 5px;
-
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #47404e;
-  line-height: 1.7em;
-  
-  @media (max-width: 768px) {
-  font-size: 1.5em;
-  }
+      <styled.div>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-iwsKbI",
+                "isStatic": true,
+                "lastClassName": "ipDPMG",
+                "rules": Array [
+                  "
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 ",
-              ],
-            },
-            "displayName": "styled.form",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-bZQynM",
-            "target": "form",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-iwsKbI",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
           }
-        }
-        forwardedRef={null}
-        onSubmit={[Function]}
-      >
-        <form
-          className="sc-bZQynM dQvTFt"
-          onSubmit={[Function]}
+          forwardedRef={null}
         >
-          <styled.div>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-iwsKbI",
-                    "isStatic": true,
-                    "lastClassName": "cSmpSV",
-                    "rules": Array [
-                      "
-  max-width: 800px;
+          <div
+            className="sc-iwsKbI ipDPMG"
+          >
+            <styled.div>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-dnqmqq",
+                      "isStatic": true,
+                      "lastClassName": "tUHnu",
+                      "rules": Array [
+                        "
+    max-width: 620px;
+    margin: 0 auto;
+    width: 100%;
 ",
-                    ],
-                  },
-                  "displayName": "styled.div",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-iwsKbI",
-                  "target": "div",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
+                      ],
+                    },
+                    "displayName": "styled.div",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-dnqmqq",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
                 }
-              }
-              forwardedRef={null}
-            >
-              <div
-                className="sc-iwsKbI cSmpSV"
+                forwardedRef={null}
               >
-                You have
-                 
-                <styled.span>
-                  <StyledComponent
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "sc-htoDjs",
-                          "isStatic": true,
-                          "lastClassName": "kQKncc",
-                          "rules": Array [
-                            "
-  white-space: nowrap;
+                <div
+                  className="sc-dnqmqq tUHnu"
+                >
+                  <styled.div>
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-gZMcBi",
+                            "isStatic": true,
+                            "lastClassName": "bMwGes",
+                            "rules": Array [
+                              "
+    padding: 20px;
+    margin: 20px;
 ",
-                          ],
-                        },
-                        "displayName": "styled.span",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "sc-htoDjs",
-                        "target": "span",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-gZMcBi",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
                       }
-                    }
-                    forwardedRef={null}
-                  >
-                    <span
-                      className="sc-htoDjs kQKncc"
+                      forwardedRef={null}
                     >
-                      <styled.span>
-                        <StyledComponent
-                          forwardedComponent={
-                            Object {
-                              "$$typeof": Symbol(react.forward_ref),
-                              "attrs": Array [],
-                              "componentStyle": ComponentStyle {
-                                "componentId": "sc-gzVnrw",
-                                "isStatic": true,
-                                "lastClassName": "grgfgk",
-                                "rules": Array [
-                                  "
-  font-weight: bold;
+                      <div
+                        className="sc-gZMcBi bMwGes"
+                      >
+                        <styled.p>
+                          <StyledComponent
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-VigVT",
+                                  "isStatic": true,
+                                  "lastClassName": "bjRZMr",
+                                  "rules": Array [
+                                    "
+  color: #fff;
 ",
-                                ],
-                              },
-                              "displayName": "styled.span",
-                              "foldedComponentIds": Array [],
-                              "render": [Function],
-                              "styledComponentId": "sc-gzVnrw",
-                              "target": "span",
-                              "toString": [Function],
-                              "warnTooManyClasses": [Function],
-                              "withComponent": [Function],
+                                  ],
+                                },
+                                "displayName": "styled.p",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-VigVT",
+                                "target": "p",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
                             }
-                          }
-                          forwardedRef={null}
-                        >
-                          <span
-                            className="sc-gzVnrw grgfgk"
+                            forwardedRef={null}
                           >
-                            1000.00
-                          </span>
-                        </StyledComponent>
-                      </styled.span>
-                       
-                      EUR
-                    </span>
-                  </StyledComponent>
-                </styled.span>
-                 
-                and
-                 
-                <styled.span>
-                  <StyledComponent
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "sc-htoDjs",
-                          "isStatic": true,
-                          "lastClassName": "kQKncc",
-                          "rules": Array [
-                            "
-  white-space: nowrap;
-",
-                          ],
-                        },
-                        "displayName": "styled.span",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "sc-htoDjs",
-                        "target": "span",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                  >
-                    <span
-                      className="sc-htoDjs kQKncc"
-                    >
-                      <styled.span>
-                        <StyledComponent
-                          forwardedComponent={
-                            Object {
-                              "$$typeof": Symbol(react.forward_ref),
-                              "attrs": Array [],
-                              "componentStyle": ComponentStyle {
-                                "componentId": "sc-gzVnrw",
-                                "isStatic": true,
-                                "lastClassName": "grgfgk",
-                                "rules": Array [
-                                  "
+                            <p
+                              className="sc-VigVT bjRZMr"
+                            >
+                              Your balance is 
+                              <styled.span>
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "sc-gqjmRU",
+                                        "isStatic": true,
+                                        "lastClassName": "kvcpxk",
+                                        "rules": Array [
+                                          "
   font-weight: bold;
+  width: 30%;
 ",
-                                ],
-                              },
-                              "displayName": "styled.span",
-                              "foldedComponentIds": Array [],
-                              "render": [Function],
-                              "styledComponentId": "sc-gzVnrw",
-                              "target": "span",
-                              "toString": [Function],
-                              "warnTooManyClasses": [Function],
-                              "withComponent": [Function],
-                            }
-                          }
-                          forwardedRef={null}
-                        >
-                          <span
-                            className="sc-gzVnrw grgfgk"
-                          >
-                            200.00
-                          </span>
-                        </StyledComponent>
-                      </styled.span>
-                       
-                      PLN
-                      .
-                    </span>
-                  </StyledComponent>
-                </styled.span>
-                <br />
-                Pay
-                <styled.span>
-                  <StyledComponent
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "sc-htoDjs",
-                          "isStatic": true,
-                          "lastClassName": "kQKncc",
-                          "rules": Array [
-                            "
-  white-space: nowrap;
-",
-                          ],
-                        },
-                        "displayName": "styled.span",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "sc-htoDjs",
-                        "target": "span",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                  >
-                    <span
-                      className="sc-htoDjs kQKncc"
-                    >
-                      <CurrencyAwareMoneyInput
-                        currencyType="SOURCE"
-                      >
-                        <MoneyInput
-                          onValueChange={[Function]}
-                          value="0.00"
-                        >
-                          <styled.input
-                            inputMode="numeric"
-                            onChange={[Function]}
-                            type="text"
-                            value="0.00"
-                          >
+                                        ],
+                                      },
+                                      "displayName": "styled.span",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "sc-gqjmRU",
+                                      "target": "span",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                >
+                                  <span
+                                    className="sc-gqjmRU kvcpxk"
+                                  >
+                                    1000.00
+                                  </span>
+                                </StyledComponent>
+                              </styled.span>
+                               
+                              EUR
+                              .
+                            </p>
+                          </StyledComponent>
+                        </styled.p>
+                        <div>
+                          <styled.div>
                             <StyledComponent
                               forwardedComponent={
                                 Object {
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-htpNat",
+                                    "componentId": "sc-fjdhpX",
                                     "isStatic": true,
-                                    "lastClassName": "kvPDcA",
+                                    "lastClassName": "lahujH",
                                     "rules": Array [
                                       "
-  font-size: inherit;
-  color: inherit;
-  background: #FFFFFF33;
-  border: 0;
-  max-width: 150px;
-  margin-left: 5px;
-  margin-right: 5px;
-",
-                                    ],
-                                  },
-                                  "displayName": "styled.input",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-htpNat",
-                                  "target": "input",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                              inputMode="numeric"
-                              onChange={[Function]}
-                              type="text"
-                              value="0.00"
-                            >
-                              <input
-                                className="sc-htpNat kvPDcA"
-                                inputMode="numeric"
-                                onChange={[Function]}
-                                type="text"
-                                value="0.00"
-                              />
-                            </StyledComponent>
-                          </styled.input>
-                        </MoneyInput>
-                      </CurrencyAwareMoneyInput>
-                      <CurrencySelector
-                        currencyType="SOURCE"
-                      >
-                        <CurrencySelector
-                          currencies={
-                            Array [
-                              "PLN",
-                              "EUR",
-                            ]
-                          }
-                          currency="EUR"
-                          onChange={[Function]}
-                        >
-                          <styled.select
-                            onChange={[Function]}
-                            value="EUR"
-                          >
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-bdVaJa",
-                                    "isStatic": true,
-                                    "lastClassName": "bwiEOO",
-                                    "rules": Array [
-                                      "
-  font-size: inherit;
-  color: inherit;
-  background: #FFFFFF33;
-  border: 0;
-  margin-left: 5px;
-  margin-right: 5px;
-",
-                                    ],
-                                  },
-                                  "displayName": "styled.select",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-bdVaJa",
-                                  "target": "select",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                              onChange={[Function]}
-                              value="EUR"
-                            >
-                              <select
-                                className="sc-bdVaJa bwiEOO"
-                                onChange={[Function]}
-                                value="EUR"
-                              >
-                                <option
-                                  key="PLN"
-                                  value="PLN"
-                                >
-                                  PLN
-                                </option>
-                                <option
-                                  key="EUR"
-                                  value="EUR"
-                                >
-                                  EUR
-                                </option>
-                              </select>
-                            </StyledComponent>
-                          </styled.select>
-                        </CurrencySelector>
-                      </CurrencySelector>
-                    </span>
-                  </StyledComponent>
-                </styled.span>
-                to get
-                <styled.span>
-                  <StyledComponent
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "sc-htoDjs",
-                          "isStatic": true,
-                          "lastClassName": "kQKncc",
-                          "rules": Array [
-                            "
-  white-space: nowrap;
-",
-                          ],
-                        },
-                        "displayName": "styled.span",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "sc-htoDjs",
-                        "target": "span",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                  >
-                    <span
-                      className="sc-htoDjs kQKncc"
-                    >
-                      <CurrencyAwareMoneyInput
-                        currencyType="TARGET"
-                      >
-                        <MoneyInput
-                          onValueChange={[Function]}
-                          value="0.00"
-                        >
-                          <styled.input
-                            inputMode="numeric"
-                            onChange={[Function]}
-                            type="text"
-                            value="0.00"
-                          >
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-htpNat",
-                                    "isStatic": true,
-                                    "lastClassName": "kvPDcA",
-                                    "rules": Array [
-                                      "
-  font-size: inherit;
-  color: inherit;
-  background: #FFFFFF33;
-  border: 0;
-  max-width: 150px;
-  margin-left: 5px;
-  margin-right: 5px;
-",
-                                    ],
-                                  },
-                                  "displayName": "styled.input",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-htpNat",
-                                  "target": "input",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                              inputMode="numeric"
-                              onChange={[Function]}
-                              type="text"
-                              value="0.00"
-                            >
-                              <input
-                                className="sc-htpNat kvPDcA"
-                                inputMode="numeric"
-                                onChange={[Function]}
-                                type="text"
-                                value="0.00"
-                              />
-                            </StyledComponent>
-                          </styled.input>
-                        </MoneyInput>
-                      </CurrencyAwareMoneyInput>
-                      <CurrencySelector
-                        currencyType="TARGET"
-                      >
-                        <CurrencySelector
-                          currencies={
-                            Array [
-                              "PLN",
-                              "EUR",
-                            ]
-                          }
-                          currency="PLN"
-                          onChange={[Function]}
-                        >
-                          <styled.select
-                            onChange={[Function]}
-                            value="PLN"
-                          >
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-bdVaJa",
-                                    "isStatic": true,
-                                    "lastClassName": "bwiEOO",
-                                    "rules": Array [
-                                      "
-  font-size: inherit;
-  color: inherit;
-  background: #FFFFFF33;
-  border: 0;
-  margin-left: 5px;
-  margin-right: 5px;
-",
-                                    ],
-                                  },
-                                  "displayName": "styled.select",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-bdVaJa",
-                                  "target": "select",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                              onChange={[Function]}
-                              value="PLN"
-                            >
-                              <select
-                                className="sc-bdVaJa bwiEOO"
-                                onChange={[Function]}
-                                value="PLN"
-                              >
-                                <option
-                                  key="PLN"
-                                  value="PLN"
-                                >
-                                  PLN
-                                </option>
-                                <option
-                                  key="EUR"
-                                  value="EUR"
-                                >
-                                  EUR
-                                </option>
-                              </select>
-                            </StyledComponent>
-                          </styled.select>
-                        </CurrencySelector>
-                      </CurrencySelector>
-                    </span>
-                  </StyledComponent>
-                </styled.span>
-                <styled.span>
-                  <StyledComponent
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "sc-dnqmqq",
-                          "isStatic": true,
-                          "lastClassName": "jHLomw",
-                          "rules": Array [
-                            "
-  font-style: italic;
-  display: block;
-  margin-top: 0.5em;
-  font-size: 0.7em;
-  line-height: 1.3em;
-",
-                          ],
-                        },
-                        "displayName": "styled.span",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "sc-dnqmqq",
-                        "target": "span",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                  >
-                    <span
-                      className="sc-dnqmqq jHLomw"
-                    >
-                      You will get 
-                      <TargetCurrencyPrice>
-                        4.2675
-                         
-                      </TargetCurrencyPrice>
-                       
-                      PLN
-                       for each 
-                      EUR
-                    </span>
-                  </StyledComponent>
-                </styled.span>
-                <styled.div>
-                  <StyledComponent
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "sc-gZMcBi",
-                          "isStatic": true,
-                          "lastClassName": "fGBWGl",
-                          "rules": Array [
-                            "
+  align-items: center;
+  background: #fff;
+  box-shadow: 0px 2px 7px 0px #002c9080;
+  padding: 10px;
   display: flex;
+  padding-right: 40px;
+",
+                                    ],
+                                  },
+                                  "displayName": "styled.div",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-fjdhpX",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <div
+                                className="sc-fjdhpX lahujH"
+                              >
+                                <Flag
+                                  currency="EUR"
+                                  customRenderProvider={[Function]}
+                                >
+                                  <styled.img
+                                    alt="eur"
+                                    src="eur.png"
+                                    title="Flag for eur"
+                                  >
+                                    <StyledComponent
+                                      alt="eur"
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-jzJRlG",
+                                            "isStatic": true,
+                                            "lastClassName": "emstUE",
+                                            "rules": Array [
+                                              "
+  height: 1em;
+  margin: 5px;
+",
+                                            ],
+                                          },
+                                          "displayName": "styled.img",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-jzJRlG",
+                                          "target": "img",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                      src="eur.png"
+                                      title="Flag for eur"
+                                    >
+                                      <img
+                                        alt="eur"
+                                        className="sc-jzJRlG emstUE"
+                                        src="eur.png"
+                                        title="Flag for eur"
+                                      />
+                                    </StyledComponent>
+                                  </styled.img>
+                                </Flag>
+                                <CurrencyAwareMoneyInput
+                                  currencyType="SOURCE"
+                                >
+                                  <MoneyInput
+                                    onValueChange={[Function]}
+                                    value="0.00"
+                                  >
+                                    <styled.input
+                                      inputMode="numeric"
+                                      onChange={[Function]}
+                                      type="text"
+                                      value="0.00"
+                                    >
+                                      <StyledComponent
+                                        forwardedComponent={
+                                          Object {
+                                            "$$typeof": Symbol(react.forward_ref),
+                                            "attrs": Array [],
+                                            "componentStyle": ComponentStyle {
+                                              "componentId": "sc-htpNat",
+                                              "isStatic": true,
+                                              "lastClassName": "gJNEJX",
+                                              "rules": Array [
+                                                "
+  font-size: inherit;
+  color: inherit;
+  background: #FFFFFF33;
+  border: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 10px;
+  flex: 1;
+",
+                                              ],
+                                            },
+                                            "displayName": "styled.input",
+                                            "foldedComponentIds": Array [],
+                                            "render": [Function],
+                                            "styledComponentId": "sc-htpNat",
+                                            "target": "input",
+                                            "toString": [Function],
+                                            "warnTooManyClasses": [Function],
+                                            "withComponent": [Function],
+                                          }
+                                        }
+                                        forwardedRef={null}
+                                        inputMode="numeric"
+                                        onChange={[Function]}
+                                        type="text"
+                                        value="0.00"
+                                      >
+                                        <input
+                                          className="sc-htpNat gJNEJX"
+                                          inputMode="numeric"
+                                          onChange={[Function]}
+                                          type="text"
+                                          value="0.00"
+                                        />
+                                      </StyledComponent>
+                                    </styled.input>
+                                  </MoneyInput>
+                                </CurrencyAwareMoneyInput>
+                                <CurrencySelector
+                                  currencyType="SOURCE"
+                                >
+                                  <CurrencySelector
+                                    currencies={
+                                      Array [
+                                        "PLN",
+                                        "EUR",
+                                      ]
+                                    }
+                                    currency="EUR"
+                                    onChange={[Function]}
+                                  >
+                                    <styled.select
+                                      onChange={[Function]}
+                                      value="EUR"
+                                    >
+                                      <StyledComponent
+                                        forwardedComponent={
+                                          Object {
+                                            "$$typeof": Symbol(react.forward_ref),
+                                            "attrs": Array [],
+                                            "componentStyle": ComponentStyle {
+                                              "componentId": "sc-bdVaJa",
+                                              "isStatic": true,
+                                              "lastClassName": "bwiEOO",
+                                              "rules": Array [
+                                                "
+  font-size: inherit;
+  color: inherit;
+  background: #FFFFFF33;
+  border: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+",
+                                              ],
+                                            },
+                                            "displayName": "styled.select",
+                                            "foldedComponentIds": Array [],
+                                            "render": [Function],
+                                            "styledComponentId": "sc-bdVaJa",
+                                            "target": "select",
+                                            "toString": [Function],
+                                            "warnTooManyClasses": [Function],
+                                            "withComponent": [Function],
+                                          }
+                                        }
+                                        forwardedRef={null}
+                                        onChange={[Function]}
+                                        value="EUR"
+                                      >
+                                        <select
+                                          className="sc-bdVaJa bwiEOO"
+                                          onChange={[Function]}
+                                          value="EUR"
+                                        >
+                                          <option
+                                            key="PLN"
+                                            value="PLN"
+                                          >
+                                            PLN
+                                          </option>
+                                          <option
+                                            key="EUR"
+                                            value="EUR"
+                                          >
+                                            EUR
+                                          </option>
+                                        </select>
+                                      </StyledComponent>
+                                    </styled.select>
+                                  </CurrencySelector>
+                                </CurrencySelector>
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                          <styled.div>
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-jTzLTM",
+                                    "isStatic": true,
+                                    "lastClassName": "jZthzA",
+                                    "rules": Array [
+                                      "
+  display: flex;
+  align-content: flex-end;
   flex-direction: column;
-  margin: 10px;
+  position: relative;
   line-height: 1em;
 ",
-                          ],
-                        },
-                        "displayName": "styled.div",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "sc-gZMcBi",
-                        "target": "div",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                  >
-                    <div
-                      className="sc-gZMcBi fGBWGl"
-                    >
-                      <ExchangeButton>
-                        <Button
-                          disabled={true}
-                          message="Cannot exchange 0.00"
-                          onClick={[Function]}
-                          primary={true}
-                        >
-                          <styled.button
-                            data-message="Cannot exchange 0.00"
-                            disabled={true}
-                            onClick={[Function]}
-                            primary={true}
-                            type="submit"
-                          >
+                                    ],
+                                  },
+                                  "displayName": "styled.div",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-jTzLTM",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <div
+                                className="sc-jTzLTM jZthzA"
+                              >
+                                <styled.div>
+                                  <StyledComponent
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "sc-cSHVUG",
+                                          "isStatic": true,
+                                          "lastClassName": "hNFsTe",
+                                          "rules": Array [
+                                            "
+  position: absolute;
+  left: 50%;
+  font-size: 0.8em;
+  transform: translate(-50%, -50%);
+  padding: 2px 4px;
+  border: 1px solid #e6ebf5;
+  background: #fff;
+",
+                                          ],
+                                        },
+                                        "displayName": "styled.div",
+                                        "foldedComponentIds": Array [],
+                                        "render": [Function],
+                                        "styledComponentId": "sc-cSHVUG",
+                                        "target": "div",
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                  >
+                                    <div
+                                      className="sc-cSHVUG hNFsTe"
+                                    >
+                                      1 
+                                      EUR
+                                       = 
+                                      <TargetCurrencyPrice>
+                                        4.2675
+                                         
+                                      </TargetCurrencyPrice>
+                                      PLN
+                                    </div>
+                                  </StyledComponent>
+                                </styled.div>
+                                <SwapButton>
+                                  <styled.button
+                                    onClick={[Function]}
+                                  >
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bZQynM",
+                                            "isStatic": true,
+                                            "lastClassName": "kvHIii",
+                                            "rules": Array [
+                                              "
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 50%;
+    outline: 0;
+    position: absolute;
+    right: -25px;
+    top: -25px;
+    border: 1px solid #eee;
+
+    &:active {
+      border: 1px solid #ddd;
+    }
+",
+                                            ],
+                                          },
+                                          "displayName": "styled.button",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bZQynM",
+                                          "target": "button",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                      onClick={[Function]}
+                                    >
+                                      <button
+                                        className="sc-bZQynM kvHIii"
+                                        onClick={[Function]}
+                                      >
+                                        <RefreshCw
+                                          color="currentColor"
+                                          size="24"
+                                        >
+                                          <svg
+                                            fill="none"
+                                            height="24"
+                                            stroke="currentColor"
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                            viewBox="0 0 24 24"
+                                            width="24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <polyline
+                                              points="23 4 23 10 17 10"
+                                            />
+                                            <polyline
+                                              points="1 20 1 14 7 14"
+                                            />
+                                            <path
+                                              d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"
+                                            />
+                                          </svg>
+                                        </RefreshCw>
+                                      </button>
+                                    </StyledComponent>
+                                  </styled.button>
+                                </SwapButton>
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                          <styled.div>
                             <StyledComponent
-                              data-message="Cannot exchange 0.00"
-                              disabled={true}
                               forwardedComponent={
                                 Object {
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-bwzfXH",
-                                    "isStatic": false,
-                                    "lastClassName": "dAIXbQ",
+                                    "componentId": "sc-fjdhpX",
+                                    "isStatic": true,
+                                    "lastClassName": "lahujH",
                                     "rules": Array [
                                       "
-  border-radius: 4px;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0px 2px 7px 0px #002c9080;
+  padding: 10px;
+  display: flex;
+  padding-right: 40px;
+",
+                                    ],
+                                  },
+                                  "displayName": "styled.div",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-fjdhpX",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <div
+                                className="sc-fjdhpX lahujH"
+                              >
+                                <Flag
+                                  currency="PLN"
+                                  customRenderProvider={[Function]}
+                                >
+                                  <styled.img
+                                    alt="pln"
+                                    src="pln.png"
+                                    title="Flag for pln"
+                                  >
+                                    <StyledComponent
+                                      alt="pln"
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-jzJRlG",
+                                            "isStatic": true,
+                                            "lastClassName": "emstUE",
+                                            "rules": Array [
+                                              "
+  height: 1em;
+  margin: 5px;
+",
+                                            ],
+                                          },
+                                          "displayName": "styled.img",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-jzJRlG",
+                                          "target": "img",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                      src="pln.png"
+                                      title="Flag for pln"
+                                    >
+                                      <img
+                                        alt="pln"
+                                        className="sc-jzJRlG emstUE"
+                                        src="pln.png"
+                                        title="Flag for pln"
+                                      />
+                                    </StyledComponent>
+                                  </styled.img>
+                                </Flag>
+                                <CurrencyAwareMoneyInput
+                                  currencyType="TARGET"
+                                >
+                                  <MoneyInput
+                                    onValueChange={[Function]}
+                                    value="0.00"
+                                  >
+                                    <styled.input
+                                      inputMode="numeric"
+                                      onChange={[Function]}
+                                      type="text"
+                                      value="0.00"
+                                    >
+                                      <StyledComponent
+                                        forwardedComponent={
+                                          Object {
+                                            "$$typeof": Symbol(react.forward_ref),
+                                            "attrs": Array [],
+                                            "componentStyle": ComponentStyle {
+                                              "componentId": "sc-htpNat",
+                                              "isStatic": true,
+                                              "lastClassName": "gJNEJX",
+                                              "rules": Array [
+                                                "
+  font-size: inherit;
+  color: inherit;
+  background: #FFFFFF33;
+  border: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 10px;
+  flex: 1;
+",
+                                              ],
+                                            },
+                                            "displayName": "styled.input",
+                                            "foldedComponentIds": Array [],
+                                            "render": [Function],
+                                            "styledComponentId": "sc-htpNat",
+                                            "target": "input",
+                                            "toString": [Function],
+                                            "warnTooManyClasses": [Function],
+                                            "withComponent": [Function],
+                                          }
+                                        }
+                                        forwardedRef={null}
+                                        inputMode="numeric"
+                                        onChange={[Function]}
+                                        type="text"
+                                        value="0.00"
+                                      >
+                                        <input
+                                          className="sc-htpNat gJNEJX"
+                                          inputMode="numeric"
+                                          onChange={[Function]}
+                                          type="text"
+                                          value="0.00"
+                                        />
+                                      </StyledComponent>
+                                    </styled.input>
+                                  </MoneyInput>
+                                </CurrencyAwareMoneyInput>
+                                <CurrencySelector
+                                  currencyType="TARGET"
+                                >
+                                  <CurrencySelector
+                                    currencies={
+                                      Array [
+                                        "PLN",
+                                        "EUR",
+                                      ]
+                                    }
+                                    currency="PLN"
+                                    onChange={[Function]}
+                                  >
+                                    <styled.select
+                                      onChange={[Function]}
+                                      value="PLN"
+                                    >
+                                      <StyledComponent
+                                        forwardedComponent={
+                                          Object {
+                                            "$$typeof": Symbol(react.forward_ref),
+                                            "attrs": Array [],
+                                            "componentStyle": ComponentStyle {
+                                              "componentId": "sc-bdVaJa",
+                                              "isStatic": true,
+                                              "lastClassName": "bwiEOO",
+                                              "rules": Array [
+                                                "
+  font-size: inherit;
+  color: inherit;
+  background: #FFFFFF33;
+  border: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+",
+                                              ],
+                                            },
+                                            "displayName": "styled.select",
+                                            "foldedComponentIds": Array [],
+                                            "render": [Function],
+                                            "styledComponentId": "sc-bdVaJa",
+                                            "target": "select",
+                                            "toString": [Function],
+                                            "warnTooManyClasses": [Function],
+                                            "withComponent": [Function],
+                                          }
+                                        }
+                                        forwardedRef={null}
+                                        onChange={[Function]}
+                                        value="PLN"
+                                      >
+                                        <select
+                                          className="sc-bdVaJa bwiEOO"
+                                          onChange={[Function]}
+                                          value="PLN"
+                                        >
+                                          <option
+                                            key="PLN"
+                                            value="PLN"
+                                          >
+                                            PLN
+                                          </option>
+                                          <option
+                                            key="EUR"
+                                            value="EUR"
+                                          >
+                                            EUR
+                                          </option>
+                                        </select>
+                                      </StyledComponent>
+                                    </styled.select>
+                                  </CurrencySelector>
+                                </CurrencySelector>
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                          <styled.div>
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-jTzLTM",
+                                    "isStatic": true,
+                                    "lastClassName": "jZthzA",
+                                    "rules": Array [
+                                      "
+  display: flex;
+  align-content: flex-end;
+  flex-direction: column;
+  position: relative;
+  line-height: 1em;
+",
+                                    ],
+                                  },
+                                  "displayName": "styled.div",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-jTzLTM",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <div
+                                className="sc-jTzLTM jZthzA"
+                              >
+                                <ExchangeButton>
+                                  <Button
+                                    disabled={true}
+                                    onClick={[Function]}
+                                  >
+                                    <styled.button
+                                      disabled={true}
+                                      onClick={[Function]}
+                                      type="button"
+                                    >
+                                      <StyledComponent
+                                        disabled={true}
+                                        forwardedComponent={
+                                          Object {
+                                            "$$typeof": Symbol(react.forward_ref),
+                                            "attrs": Array [],
+                                            "componentStyle": ComponentStyle {
+                                              "componentId": "sc-bwzfXH",
+                                              "isStatic": false,
+                                              "lastClassName": "hCaox",
+                                              "rules": Array [
+                                                "
   box-shadow: 2px 4px 10px 0px #0000004f;
   padding: 10px 20px;
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.5em;
+  font-size: 1em;
   margin: 10px auto;
   transition: 50ms transform linear;
-  text-transform: uppercase;
   position: relative;
-
-  ",
-                                      [Function],
-                                      "
 
   & > svg {
     margin-left: 10px;
   }
 
   ",
-                                      [Function],
-                                      "
+                                                [Function],
+                                                "
 
   &:hover {
     cursor: pointer;
@@ -738,173 +900,71 @@ exports[`should render initial state 1`] = `
     transform: scale(0.95);
   }
 ",
-                                    ],
-                                  },
-                                  "displayName": "styled.button",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-bwzfXH",
-                                  "target": "button",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                              onClick={[Function]}
-                              primary={true}
-                              type="submit"
-                            >
-                              <button
-                                className="sc-bwzfXH IwVYN"
-                                data-message="Cannot exchange 0.00"
-                                disabled={true}
-                                onClick={[Function]}
-                                type="submit"
-                              >
-                                Echange 
-                                <TrendingUp
-                                  color="currentColor"
-                                  size="24"
-                                >
-                                  <svg
-                                    fill="none"
-                                    height="24"
-                                    stroke="currentColor"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    viewBox="0 0 24 24"
-                                    width="24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <polyline
-                                      points="23 6 13.5 15.5 8.5 10.5 1 18"
-                                    />
-                                    <polyline
-                                      points="17 6 23 6 23 12"
-                                    />
-                                  </svg>
-                                </TrendingUp>
-                              </button>
+                                              ],
+                                            },
+                                            "displayName": "styled.button",
+                                            "foldedComponentIds": Array [],
+                                            "render": [Function],
+                                            "styledComponentId": "sc-bwzfXH",
+                                            "target": "button",
+                                            "toString": [Function],
+                                            "warnTooManyClasses": [Function],
+                                            "withComponent": [Function],
+                                          }
+                                        }
+                                        forwardedRef={null}
+                                        onClick={[Function]}
+                                        type="button"
+                                      >
+                                        <button
+                                          className="sc-bwzfXH hCaox"
+                                          disabled={true}
+                                          onClick={[Function]}
+                                          type="button"
+                                        >
+                                          Echange 
+                                          <TrendingUp
+                                            color="currentColor"
+                                            size="24"
+                                          >
+                                            <svg
+                                              fill="none"
+                                              height="24"
+                                              stroke="currentColor"
+                                              strokeLinecap="round"
+                                              strokeLinejoin="round"
+                                              strokeWidth="2"
+                                              viewBox="0 0 24 24"
+                                              width="24"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                              <polyline
+                                                points="23 6 13.5 15.5 8.5 10.5 1 18"
+                                              />
+                                              <polyline
+                                                points="17 6 23 6 23 12"
+                                              />
+                                            </svg>
+                                          </TrendingUp>
+                                        </button>
+                                      </StyledComponent>
+                                    </styled.button>
+                                  </Button>
+                                </ExchangeButton>
+                              </div>
                             </StyledComponent>
-                          </styled.button>
-                        </Button>
-                      </ExchangeButton>
-                       or 
-                      <SwapButton>
-                        <Button
-                          onClick={[Function]}
-                        >
-                          <styled.button
-                            onClick={[Function]}
-                            type="button"
-                          >
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-bwzfXH",
-                                    "isStatic": false,
-                                    "lastClassName": "dAIXbQ",
-                                    "rules": Array [
-                                      "
-  border-radius: 4px;
-  box-shadow: 2px 4px 10px 0px #0000004f;
-  padding: 10px 20px;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.5em;
-  margin: 10px auto;
-  transition: 50ms transform linear;
-  text-transform: uppercase;
-  position: relative;
-
-  ",
-                                      [Function],
-                                      "
-
-  & > svg {
-    margin-left: 10px;
-  }
-
-  ",
-                                      [Function],
-                                      "
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  &:active {
-    transform: scale(0.95);
-  }
-",
-                                    ],
-                                  },
-                                  "displayName": "styled.button",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-bwzfXH",
-                                  "target": "button",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                              onClick={[Function]}
-                              type="button"
-                            >
-                              <button
-                                className="sc-bwzfXH dAIXbQ"
-                                onClick={[Function]}
-                                type="button"
-                              >
-                                Swap Currencies
-                                <RefreshCw
-                                  color="currentColor"
-                                  size="24"
-                                >
-                                  <svg
-                                    fill="none"
-                                    height="24"
-                                    stroke="currentColor"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    viewBox="0 0 24 24"
-                                    width="24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <polyline
-                                      points="23 4 23 10 17 10"
-                                    />
-                                    <polyline
-                                      points="1 20 1 14 7 14"
-                                    />
-                                    <path
-                                      d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"
-                                    />
-                                  </svg>
-                                </RefreshCw>
-                              </button>
-                            </StyledComponent>
-                          </styled.button>
-                        </Button>
-                      </SwapButton>
-                    </div>
-                  </StyledComponent>
-                </styled.div>
-              </div>
-            </StyledComponent>
-          </styled.div>
-        </form>
-      </StyledComponent>
-    </styled.form>
+                          </styled.div>
+                        </div>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </div>
+              </StyledComponent>
+            </styled.div>
+          </div>
+        </StyledComponent>
+      </styled.div>
+    </MainLayout>
   </App>
 </Provider>
 `;
