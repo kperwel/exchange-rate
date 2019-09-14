@@ -202,7 +202,46 @@ exports[`should render initial state 1`] = `
                               </styled.span>
                                
                               EUR
-                              .
+                               and 
+                              <styled.span>
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "sc-gqjmRU",
+                                        "isStatic": true,
+                                        "lastClassName": "kvcpxk",
+                                        "rules": Array [
+                                          "
+  font-weight: bold;
+  width: 30%;
+",
+                                        ],
+                                      },
+                                      "displayName": "styled.span",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "sc-gqjmRU",
+                                      "target": "span",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                >
+                                  <span
+                                    className="sc-gqjmRU kvcpxk"
+                                  >
+                                    200.00
+                                  </span>
+                                </StyledComponent>
+                              </styled.span>
+                               
+                              PLN
+                               .
                             </p>
                           </StyledComponent>
                         </styled.p>
